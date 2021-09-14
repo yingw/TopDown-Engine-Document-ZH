@@ -70,7 +70,7 @@ LevelManager.Instance.Players[0]
 
 它是一个角色数组，所以从那里可以很容易地与你的玩家互动：
 
-```
+```csharp
 // this will freeze your main character
 LevelManager.Instance.Players[0].Freeze();
 
