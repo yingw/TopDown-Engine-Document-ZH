@@ -32,7 +32,7 @@
 
 您可以用钥匙打开的最常见的东西之一是门。所以让我们从那个开始。在 TopDown Engine 中创建可打开门的最简单方法是重复使用 2D 或 3D 门预制件。它也可以是移动平台、墙壁或任何您想要的东西。唯一的强制性元素是**关键操作区组件**。
 
-重点经营区[](https://topdown-engine-docs.moremountains.com/keys-doors-and-chests.html#key-operated-zones)
+钥匙操作区域[](https://topdown-engine-docs.moremountains.com/keys-doors-and-chests.html#key-operated-zones)
 ----------------------------------------------------------------------------------------------------
 
 ![杰基尔](https://topdown-engine-docs.moremountains.com/images/key-2.png)
@@ -49,7 +49,7 @@ KeyOperatedZones 是 ButtonActivated 类的扩展，这意味着它们将结合 
 
 使用这个简单的组件，您可以控制门，但实际上任何具有可绑定到此 Key Action 字段的公共方法的对象。您可以让门在您靠近时或按下按钮时打开，或者没有钥匙就无法打开等。
 
-创建一个胸部[](https://topdown-engine-docs.moremountains.com/keys-doors-and-chests.html#creating-a-chest)
+创建一个箱子[](https://topdown-engine-docs.moremountains.com/keys-doors-and-chests.html#creating-a-chest)
 ---------------------------------------------------------------------------------------------------
 
 创建一个箱子就像创建一个门一样简单。像以前一样创建一个关键操作区，然后将精灵或 3D 模型放入场景中的胸部。在那个箱子对象上，添加一个 InventoryEngineChest 组件。然后你所要做的就是向它添加 ItemPicker 组件（每个你想要的物品一个）。然后像以前一样将您的 Chest 绑定到 KeyOperatedZone 的检查器，这次使用 InventoryEngineChest.OpenChest 方法。你完成了！激活后，InventoryEngineChest 组件将自动选取您添加到其中的所有 ItemPickers，并将它们的物品放入您角色的库存中。此外，您可以向其添加动画师以触发打开动画。然后，您的动画师将需要一个名为"OpenChest"的触发器动画参数。

@@ -53,7 +53,7 @@ MinimalSandbox3D 演示场景中的 DialogueZone 检查器
 
 大多数菜单，例如开始或游戏结束屏幕，都基于 Nice Touch，就像移动控件一样。这允许非常简单的设置和跨平台功能，无论您是否针对基于触摸的设备。只需确保针对特定目标正确设置面板和触摸区（PC 应启用鼠标模式）。
 
-健康棒[](https://topdown-engine-docs.moremountains.com/ui.html#healthbars)
+血条[](https://topdown-engine-docs.moremountains.com/ui.html#healthbars)
 -----------------------------------------------------------------------
 
 ![杰基尔](https://topdown-engine-docs.moremountains.com/images/gui-1.png)

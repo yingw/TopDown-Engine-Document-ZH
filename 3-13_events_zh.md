@@ -96,7 +96,7 @@ MMGameEvent.Trigger("Save");
 
 ```
 
-**自顶向下引擎事件：**
+**TopDownEngineEvent：**
 
 TopDownEngineEvents 是 MMGameEvents 的替代方案。它们由 TopDownEngineEventTypes 而不是字符串定义。TopDownEngineEventTypes 在枚举中定义。这可以防止您在使用字符串时出现拼写错误。
 
@@ -137,7 +137,7 @@ MMCharacterEvent.Trigger(_character, MMCharacterEventTypes.Jump);
 
 每次受到伤害时触发。
 
-**检查点事件：**
+**CheckpointEvent：**
 
 每次到达检查点时触发。
 
@@ -145,7 +145,7 @@ MMCharacterEvent.Trigger(_character, MMCharacterEventTypes.Jump);
 
 MMAchievementUnlockedEvents 通常在成就解锁时触发。然后它可以被 GUI 捕获并用于显示成就，但也可以用于增加分数等。
 
-**彩信事件：**
+**MMSfxEvent：**
 
 MMSfxEvent 是允许您请求 SoundManager 播放特定声音的事件。诚然，你也可以直接做 SoundManager.Instance.PlaySound(clipToPlay,transform.position); 两者都会起作用。事件允许您这样做，而不会在缺少声音管理器的情况下冒错误的风险。事件只会被广播，没有任何东西会拦截它（并且声音不会播放，但至少你不会收到错误）。
 

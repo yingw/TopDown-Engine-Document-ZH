@@ -59,7 +59,7 @@ MMAchievementManager.AddProgress ("JumpAround", 1);
 
 当然，您可以将"1"替换为您选择的任何值，以加快进度。
 
-MMA成就规则[](https://topdown-engine-docs.moremountains.com/achievements.html#mmachievementrules)
+MMAchievementRules[](https://topdown-engine-docs.moremountains.com/achievements.html#mmachievementrules)
 ---------------------------------------------------------------------------------------------
 
 如前所述，现在的成就是由 AchievementRules 类触发的。这是一个 MonoBehaviour，因此您需要将它添加到您希望从中解锁成就的每个场景中的空 GameObject。不过成就是全局的，所以如果你在 A 级解锁一个，你将无法在 B 级再次解锁。如果你不想使用 AchievementRules 类，请确保将这些行添加到游戏开始时的经理：
